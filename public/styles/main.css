@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to right, blue, purple, red);
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 3em;
+    padding-bottom: 1em;
+    
+}
+
+#url {
+  height: 200px;
+  width: 200px;
+  border: solid black;
+}
+
+.container-text, h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.container-form {
+
+    text-align: center;
+}
+
+.title {
+  text-align: center;
+  height: 1px;
+}
+
+.content {
+  padding: 2em; 
+  align-items: center; 
+  width: 20em;
+  font-size: 15px;
+}
+
+.anchor {
+  color: white;
+  text-decoration: underline;
+}
+
+.anchor:hover {
+  color: blue;
+}
+
+#foo {
+  text-align: center;
+  color: white;
+  padding-top: 1em;
+}
+
+#urlInput, #urlButton {
+  border-radius: 5px;
+  padding: 10px;
+}

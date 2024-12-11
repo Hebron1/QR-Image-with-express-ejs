@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+    <% if (locals.myUrl) { %>
+    <img id="url" src="images/url.png" alt="my url" />
+    <div class="container-text">
+    <h1 class="title">The Apps</h1>
+    <p class="content"> 
+        "Introducing The App, a free application that you can use. 
+        We developed this website using Node, Express, and EJS. 
+        We are grateful to you for using this application."
+        Here is the link for you: <a href="http://<%= myUrl %>" class="anchor"><%= myUrl %> </a>
+    </p>
+    </div>
+    <% } else { %>
+    <img id="url" src="images/default.png" alt="default url" />
+    <div class="container-text">
+    <h1 class="title">The Apps</h1>
+    <p class="content">
+        "Introducing The App, a free application that you can use. 
+        We developed this website using Node, Express, and EJS. 
+        We are grateful to you for using this application." 
+        your link should be here:
+    </p>
+    </div>
+    <% } %>
+    </div>
+    <div class="container-form">
+    <h1>Write some here:</h1>
+    <form action="/submit" method="post">
+        <input id="urlInput" type="text" name="inputValues" placeholder="Write url here" />
+        <button id="urlButton" type="submit">Add</button>
+    </form>
+    </div>
+    <footer>
+        <p id="foo">Created by Yusuf Hebron</p>
+    </footer>
+</body>
+</html>
